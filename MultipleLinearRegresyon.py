@@ -73,5 +73,5 @@ tahmin = lR2.predict(X1)
 
 sonDf = pd.DataFrame(tahmin,columns=["backward eliminationdan sonra tahminler"])
 sonuc = pd.concat([dftahmin,dfGercek_degerler,sonDf],axis=1)
-sonuc.columns=["tahmin degerler","gercek degerler","backward elimination sonrası tahminler"]
+sonuc.columns=["ilk tahminler","gercek temperature","backward elimination sonrası tahmin"]
 print(sonuc)
